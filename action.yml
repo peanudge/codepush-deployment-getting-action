@@ -1,5 +1,5 @@
 name: "Getting CodePush Deployment Action"
-decription: "this action request deployment info to appcenter using javascript"
+decription: "this action request deployment info."
 inputs:
   appcenter-token:
     description: "Access token for using code push cli"
