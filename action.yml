@@ -1,0 +1,18 @@
+name: "Getting CodePush Deployment Action"
+decription: "this action request deployment info to appcenter using javascript"
+inputs:
+  appcenter-token:
+    description: "Access token for using code push cli"
+    required: true
+  deployment-name:
+    description: "Deployment name for selecting from many deployments related app"
+    required: true
+  app-name:
+    description: "Specify app in the <ownerName>/<appName> format"
+    required: true
+outputs:
+  deployment:
+    description: "Deployment JSON object by code push deployment CLI"
+runs:
+  using: "node12"
+  main: "index.js"
