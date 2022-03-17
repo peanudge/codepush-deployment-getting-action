@@ -1,10 +1,10 @@
-# CodePush Deploment getting Action
+# CodePush deployment getting action
 
 This action get latest **code push deployment informations**
 
-The reason why make this action not using directly CLI is that deployment result(JSON) by Code Push CLI is array.
+The reason why make this action instead of using directly CLI is that deployment result(JSON text) by Code Push CLI is array.
 
-It`s very hard to filter deployment from deployment JSON array using only git action expressions.
+It`s sticky and cumbersome to filter specific element from JSON array using only git action expressions in workflow.
 
 Support informations is
 
