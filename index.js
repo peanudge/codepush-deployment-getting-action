@@ -30,7 +30,14 @@ try {
             );
             return;
           }
-          core.setOutput("deployment", selectedDeployment);
+          core.setOutput("key", selectedDeployment.key);
+          core.setOutput("name", selectedDeployment.name);
+          core.setOutput("version", selectedDeployment.latestRelease.label);
+          core.setOutput(
+            "mandatory",
+            selectedDeployment.latestRelease.isMandatory
+          );
+          core.setOutput("json", JSON.stringify(selectedDeployment));
         }
       );
     }
