@@ -1,5 +1,5 @@
 name: "Getting CodePush Deployment Action"
-decription: "This action get deployment information using code-push cli. if you use only code push cli, get specific deployment with deployment name."
+decription: "This action get deployment information using code push cli. if you use only code push cli, get specific deployment with deployment name."
 inputs:
   appcenter-token:
     description: "Access token for using code push cli"
