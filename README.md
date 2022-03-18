@@ -75,7 +75,7 @@ Tag will be `company/test-app/v123`.
 
 - name: Get CodePush Deployment
     id: deployment-job
-    uses: peanut-lover/codepush-deployment-getting-action@v1.2
+    uses: peanut-lover/codepush-deployment-getting-action@v1.0
     with:
         appcenter-token: ${{ secrets.APPCENTER_ACCESS_TOKEN }}
         deployment-name: ${{ env.STAGE }}
